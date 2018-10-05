@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NephroMain"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Länge (cm)"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLaenge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextLaenge" />
+
+    <EditText
+        android:id="@+id/editTextLaenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Länge eingeben"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Gewicht (kg)"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextGewicht"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextGewicht" />
+
+    <EditText
+        android:id="@+id/editTextGewicht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Gewicht eingeben"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLaenge" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="96dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Körperoberfläche (m²)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewKOF"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKOF"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBerechnen" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Perspiratio"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewPerspiratio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPerspiratio"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKOF" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Polyurie"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewPolyurie"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPolyurie"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPerspiratio" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Oligurie"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewOligurie"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOligurie"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPolyurie" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Anurie"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAnurie"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnurie"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOligurie" />
+
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Berechnen"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGewicht"
+        app:layout_constraintStart_toStartOf="@+id/editTextGewicht"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGewicht" />
+
+</android.support.constraint.ConstraintLayout>
